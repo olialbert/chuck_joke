@@ -6,6 +6,9 @@ mainClassName = "is.arnlaugsson.chuck_joke.ChuckWeb"
 repositories {
     jcenter()
 }
+task stage {
+  dependsOn installDist
+}
 
 dependencies {
     compile 'org.slf4j:slf4j-api:1.7.5'
